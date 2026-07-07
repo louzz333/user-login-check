@@ -1,0 +1,64 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color:ghostwhite;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 7px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 500px;
+}
+.mybtn{
+    padding:20px;
+
+}
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color:dimgray;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+        background-color:indigo;
+    }
+.ph:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+.text-center{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}

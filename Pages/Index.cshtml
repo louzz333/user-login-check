@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@if (Model.LoginSuccess == true)
+{
+
+    <div style="background-color:green">
+        This user exists in the table
+    </div>
+}
+else if(Model.LoginSuccess==false){
+    <div style="background-color:red">
+        This user does not exists in the table
+    </div>
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h1>Hello,@Model.Name! </h1>
+    <form method="post">
+        <input class="ph" type="text" name="EnteredName" />
+        <button type="submit">Say Hello</button>
+    </form>
+
+  <div class="login-card">
+   
+    <form method="post">
+        <input class="ph" type="text" name="NewUserName" placeholder="Username" />
+        <input class="ph" type="text" name="NewPass" placeholder="Password" />
+        <div class="mybtn">
+                <button type="submit" asp-page-handler="AddUser">Add user</button>
+                <button type="submit" asp-page-handler="Check">Check </button>
+        </div>
+        
+    </form>
+
+  </div>
+
+    
+ 
+</div>
